@@ -2,7 +2,6 @@ import os
 import time
 import random
 import sys
-import winsound
 print("Please run setup file before running this one!")
 time.sleep(0.2)
 print("Checking File Integrity...")
@@ -10,7 +9,7 @@ time.sleep(1)
 if os.path.exists("data"):
     empty = 0
 else:
-    print("CRITICAL ERROR EB01")
+    print("ERROR: EB01")
     time.sleep(0.5)
     print("Please run setup file to correct this error.")
     time.sleep(3)
@@ -18,7 +17,7 @@ else:
 if os.path.exists("data\\bin"):
     empty1 = 0
 else:
-    print("CRITICAL ERROR EB02")
+    print("ERROR: EB02")
     time.sleep(0.5)
     print("Please run setup file to correct this error.")
     time.sleep(3)
@@ -27,7 +26,7 @@ if os.path.exists("data\\bin\\userdata"):
     empty2 = 0
     print("File Integrity OK")
 else:
-    print("CRITICAL ERROR EB03")
+    print("ERROR: EB03")
     time.sleep(0.5)
     print("Please run setup file to correct this error.")
     time.sleep(3)
@@ -51,7 +50,7 @@ for x in range(0,999999999999999999999999999999999999999999999999999999999999999
         sys.exit()
 
 for x in range(0, 9999999999999999999999999999999999999999999999999999999999999999999999):
-    time.sleep(2.1)
+    time.sleep(1)
     choice1 = input("Would you like to write to the archive or read the archive (write/read) : ")
     if choice1 == "write":
         writefile = open("data\\bin\\archive.bin", "a")
@@ -64,7 +63,7 @@ for x in range(0, 99999999999999999999999999999999999999999999999999999999999999
         writefile.close()
     if choice1 == "read":
         print("Reading archive...")
-        time.sleep(1)
+        time.sleep(0.7)
         readfile = open("data\\bin\\archive.bin", "r")
         read = readfile.read()
         print("---------------------------------------------------------------------------"

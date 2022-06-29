@@ -8,7 +8,7 @@ time.sleep(2.3)
 if os.path.exists("data"):
     empty = 0
 else:
-    print("CRITICAL ERROR: EB01")
+    print("ERROR: EB01")
     time.sleep(1)
     print("Fixing issue...")
     time.sleep(1)
@@ -22,7 +22,7 @@ if os.path.exists("data\\bin"):
         empty2 = 0
         time.sleep(1)
 else:
-    print("CRITICAL ERROR: EB02")
+    print("ERROR: EB02")
     time.sleep(1)
     print("Fixing issue...")
     time.sleep(1)
@@ -34,7 +34,7 @@ else:
 if os.path.exists("data\\bin\\userdata"):
     empty1 = 0
 else:
-    print("CRITICAL ERROR: EB03")
+    print("ERROR: EB03")
     time.sleep(1)
     print("Fixing issue...")
     time.sleep(1)

@@ -1,7 +1,9 @@
-
+// Author: That-Linux-Programmer
+// aka Nitro-Live
+//Thanks for downloading the archive!
 import time
 import datetime
-
+import os
 print(datetime.datetime.now())
 time.sleep(0.8)
 print("Loading...")
@@ -21,13 +23,15 @@ print()
 choice = input("What file would you like to run? : ")
 if choice == "archive":
     print("Running Archive...")
-    time.sleep(1)
+    if os.path.exists("scripts/Archive.py"):
+        time.sleep(1)
     exec(open("scripts/Archive.py").read())
     print()
 
 if choice == "setup":
     print("Running Setup...")
-    time.sleep(1)
-    exec(open("scripts/setup.py").read())
+    if os.path.exists("scripts/setup.py"):
+        time.sleep(1)
+        exec(open("scripts/setup.py").read())
     print()
 

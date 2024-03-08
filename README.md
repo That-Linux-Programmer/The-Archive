@@ -1,3 +1,4 @@
+**DISCONTINUED**
 # The-Archive
 In this application you can store text and numbers or anything else!
 
